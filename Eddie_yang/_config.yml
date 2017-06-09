@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site 网站
-title: 小洋子的博客             #网站标题
-subtitle: 副标题               #网站副标题
-description: 网站描述          #网站描述
+title: Eddie_yang‘s Notes               #网站标题
+subtitle: 站在前端门口进不去               #网站副标题
+description: 小洋子的前端学习笔记          #网站描述
 author: Eddie_yang
-language: zh-CN
-timezone:                     #网站时区
+language: zh-Hans
+timezone:                               #网站时区
 
 # URL 网址
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://eddie_yang.com/blog         #网址
-root: /blog/                            #网站跟目录
+url: http://yangzi0914.github.io        #网址
+root: /                                 #网站跟目录
 permalink: :year/:month/:day/:title/    #文章的永久链接格式
 permalink_defaults:                     #永久链接中各部分的默认值
 
@@ -63,7 +63,7 @@ pagination_dir: page                    #分页目录
 # Extensions 扩展
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape                        #当前主题名称。值为false时禁用主题
+theme: next                        #当前主题名称。值为false时禁用主题
 
 # Deployment 部署部分的设置
 ## Docs: https://hexo.io/docs/deployment.html
