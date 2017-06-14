@@ -7,7 +7,7 @@ title: Eddie_yang‘s Notes               #网站标题
 subtitle: 站在前端门口进不去               #网站副标题
 description: 小洋子的前端学习笔记          #网站描述
 author: Eddie_yang
-language: zh-Hans
+language: zh-cn
 timezone:                               #网站时区
 
 # URL 网址
@@ -63,7 +63,7 @@ pagination_dir: page                    #分页目录
 # Extensions 扩展
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next                        #当前主题名称。值为false时禁用主题
+theme: tranquilpeak                     #当前主题名称。值为false时禁用主题
 
 # Deployment 部署部分的设置
 ## Docs: https://hexo.io/docs/deployment.html
