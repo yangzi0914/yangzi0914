@@ -6,23 +6,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Eddie_yang‘s Notes">
-    <title>Hello World - Eddie_yang‘s Notes</title>
+    <title>正则表达式 - Eddie_yang‘s Notes</title>
     <meta name="author" content="Eddie_yang">
     
     
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="1、简介   正则表达式：要检索某个文本的时候，可以使用一种模式对这个文本的内容进行解析，这个模式可以是一个单独的字符，也可以是一系列复杂的字符，可以实现对文本内容的解析、校验、替换等功能。RegExp是正则表达式的缩写。  2、创建正则表达式对象1.构造函数法12345var parrent = new RegExp(&quot;box&quot;, &quot;gi&quot;);````  2.字面量法  ````javascri">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="Hello World">
+<meta property="og:title" content="正则表达式">
 <meta property="og:url" content="http://yangzi0914.github.io/2017/06/14/hello-world/index.html">
 <meta property="og:site_name" content="Eddie_yang‘s Notes">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:updated_time" content="2017-06-14T10:22:36.000Z">
+<meta property="og:description" content="1、简介   正则表达式：要检索某个文本的时候，可以使用一种模式对这个文本的内容进行解析，这个模式可以是一个单独的字符，也可以是一系列复杂的字符，可以实现对文本内容的解析、校验、替换等功能。RegExp是正则表达式的缩写。  2、创建正则表达式对象1.构造函数法12345var parrent = new RegExp(&quot;box&quot;, &quot;gi&quot;);````  2.字面量法  ````javascri">
+<meta property="og:updated_time" content="2017-08-08T13:07:02.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="正则表达式">
+<meta name="twitter:description" content="1、简介   正则表达式：要检索某个文本的时候，可以使用一种模式对这个文本的内容进行解析，这个模式可以是一个单独的字符，也可以是一系列复杂的字符，可以实现对文本内容的解析、校验、替换等功能。RegExp是正则表达式的缩写。  2、创建正则表达式对象1.构造函数法12345var parrent = new RegExp(&quot;box&quot;, &quot;gi&quot;);````  2.字面量法  ````javascri">
     
     
         
@@ -194,7 +194,7 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title" itemprop="headline">
-            Hello World
+            正则表达式
         </h1>
     
     <div class="post-meta">
@@ -210,15 +210,176 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+            <h3 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h3><blockquote>
+<p>  正则表达式：要检索某个文本的时候，可以使用一种模式对这个文本的内容进行解析，这个模式可以是一个单独的字符，也可以是一系列复杂的字符，可以实现对文本内容的解析、校验、替换等功能。RegExp是正则表达式的缩写。</p>
+</blockquote>
+<h3 id="2、创建正则表达式对象"><a href="#2、创建正则表达式对象" class="headerlink" title="2、创建正则表达式对象"></a>2、创建正则表达式对象</h3><p>1.构造函数法<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> parrent = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"box"</span>, <span class="string">"gi"</span>);</div><div class="line"><span class="string">``</span><span class="string">``</span>  </div><div class="line"><span class="number">2.</span>字面量法  </div><div class="line"><span class="string">``</span><span class="string">``</span>javascript</div><div class="line"><span class="keyword">var</span> parrent = <span class="regexp">/box/gi</span>;  <span class="comment">//该变量下文将继续使用</span></div></pre></td></tr></table></figure></p>
+<h3 id="3、正则表达式的方法"><a href="#3、正则表达式的方法" class="headerlink" title="3、正则表达式的方法"></a>3、正则表达式的方法</h3><h6 id="1、test"><a href="#1、test" class="headerlink" title="1、test()"></a>1、test()</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">"this is a Box box box"</span>;  <span class="comment">//该变量下文将继续使用</span></div><div class="line">parrent.test(str);</div></pre></td></tr></table></figure>
+<p><strong>功能</strong>：查找参数字符串中是否存在正则表达式所写的模式规则<br><strong>参数</strong>：要检索的字符串。<br><strong>返回值</strong>：布尔值，true表示找到符合该模式的字符串，false表示未找到。<br><strong>注意</strong>：<em>这个方法只要找到匹配模式中的规则，就立即返回true，就不会再往下找了，所以这个方法 全局模式匹配’g’ 无效</em></p>
+<h6 id="2、exec"><a href="#2、exec" class="headerlink" title="2、exec()"></a>2、exec()</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">parrent.exec(str);</div></pre></td></tr></table></figure>
+<p><strong>功能</strong>：查找参数字符串中是否存在正则表达式所描述的模式规则。<br><strong>参数</strong>：要检索的字符串。<br><strong>返回值</strong>：数组或者null，不存在则返回null；存在的话返回的是数组，该数组的第0个元素存放的是匹配文本，除了常规的数组元素之外，返回的数组还含有两个对象属性。index 属性声明的是匹配文本的起始字符在str中的位置，input属性声明的是对str的引用。</p>
+<p><strong>注意</strong>：<br><em>如果正则表达式的模式修饰符写成”g”，exec()的工作原理：找到第一个匹配的字符串，并存储它所在的位置（下标），如果再次运行exec()检索同一个字符串的话，则从刚才存储的位置开始检索，并找到下一个匹配到的字符串，然后把该字符串的位置存储起来，以此类推。当检索到结果为null的时候，下一次在调用exec()方法时，会从头开始。</em><br><em>使用test()方法检索同一个字符串的话，也会对位置进行存储，所以当test()和exec()方法混合使用的时候，要注意。</em><br><em>如果正则表达式的模式修饰符没有用”g”，则每次都是从头开始查找，返回的是第一次查找到的位置。</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//指定一个模式，给一个字符串，打印出符合这个模式的字符串的每一个位置</span></div><div class="line"><span class="keyword">var</span> myStr = <span class="string">"Ligth of my life of Fire fire fire fire fire"</span>;</div><div class="line"><span class="keyword">var</span> myParrent = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"fire"</span>, <span class="string">"gi"</span>);</div><div class="line"></div><div class="line"><span class="keyword">while</span> (<span class="literal">true</span>) &#123;</div><div class="line">	<span class="keyword">var</span> ret = myParrent.exec(myStr);</div><div class="line">	<span class="keyword">if</span> (ret == <span class="literal">null</span>) &#123;</div><div class="line">		<span class="keyword">break</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="built_in">console</span>.log(ret);</div><div class="line">	<span class="built_in">console</span>.log(ret.index);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h6 id="3、compile"><a href="#3、compile" class="headerlink" title="3、compile()"></a>3、compile()</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">parrent.compile(<span class="string">"bob"</span>);</div></pre></td></tr></table></figure>
+<p><strong>功能</strong>：用于修改正则表达式模式，也可以修改模式修饰符(可选)。<br><strong>参数</strong>：要替换的模式</p>
+<h3 id="4-与正则相关的字符串方法"><a href="#4-与正则相关的字符串方法" class="headerlink" title="4.与正则相关的字符串方法"></a>4.与正则相关的字符串方法</h3><p>正则表达式也可以作为字符串的部分方法的参数</p>
+<h6 id="1-match"><a href="#1-match" class="headerlink" title="1.match()"></a>1.match()</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">str.match(<span class="regexp">/box/gi</span>);</div></pre></td></tr></table></figure>
+<p><strong>功能</strong>：在字符串内检索指定的子字符串，或找到一个或多个正则表达式的匹配。该方法类似 indexOf()，但是它返回指定的子串，而不是子串开始的位置。<br><strong>参数</strong>：指定的子串或者正则表达式<br><strong>返回值</strong>：数组或者null，找到匹配的字符串则返回数组，数组的内容依赖于参数regexp是否具有全局标志g。如果有g，数组内容为所有匹配的子串，如果没有g，则返回的数组与前面exec()方法返回的数组一样，第0个元素存放的是匹配文本，并包含index属性和input属性。  </p>
+<h6 id="2-search"><a href="#2-search" class="headerlink" title="2.search()"></a>2.search()</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">str.search(<span class="regexp">/B0x/gi</span>);</div></pre></td></tr></table></figure>
+<p><strong>功能</strong>：用于检索字符串中指定的子字符串，或检索与正则表达式相匹配的子字符串。<br><strong>参数</strong>：指定的子串或者正则表达式<br><strong>返回值</strong>：找到返回子串开始位置的下标，没有找到返回-1<br><strong>注意</strong>：<em>“g”修饰符无用，和前面test()方法原理一样</em></p>
+<h6 id="3-repalce"><a href="#3-repalce" class="headerlink" title="3.repalce()"></a>3.repalce()</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">str.replace(<span class="regexp">/box/g</span>, <span class="string">"tom"</span>);</div></pre></td></tr></table></figure>
+<p><strong>功能</strong>：用于在字符串中用一些字符替换另一些字符，或替换一个与正则表达式匹配的子串。<br><strong>参数</strong>：参数1：被替换的子串或者正则表达式；参数2：新子串<br><strong>返回值</strong>：替换后新生成的字符串（源字符串不变）</p>
+<h6 id="4-split"><a href="#4-split" class="headerlink" title="4.split()"></a>4.split()</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">str.split(<span class="regexp">/box/g</span>);</div></pre></td></tr></table></figure>
+<p><strong>功能</strong>：用于在字符串中用一些字符替换另一些字符，或替换一个与正则表达式匹配的子串。<br><strong>参数</strong>：参数1：切割点字符串或正则表达式；参数2：(可选)返回的数组的最大长度，不指定则整个字符串都会被切割<br><strong>返回值</strong>：数组，数组元素为切割好的子串</p>
+<h3 id="4、正则表达式元字符"><a href="#4、正则表达式元字符" class="headerlink" title="4、正则表达式元字符"></a>4、正则表达式元字符</h3><h6 id="1-转义字符"><a href="#1-转义字符" class="headerlink" title="1.转义字符"></a>1.转义字符</h6><p>\ 将下一个字符转换成为一个特殊字符或一个原义字符。例如’n’匹配原义字符”n”。’\n’匹配特殊字符换行符; “[]”匹配特殊字符[],而”[]“则匹配原义字符”[]”。<br>‘\‘ 这个字符很特殊，在字符串也需要转义。用 ‘\\‘表示。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">"[ this is \\ a chr"</span>;</div><div class="line"><span class="built_in">console</span>.log(str);</div></pre></td></tr></table></figure></p>
+<h6 id="2-单个字符"><a href="#2-单个字符" class="headerlink" title="2.单个字符"></a>2.单个字符</h6><table>
+<thead>
+<tr>
+<th>元字符</th>
+<th>匹配内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.</td>
+<td>匹配除换行符外的任意字符</td>
+</tr>
+<tr>
+<td>[a-z0-9]</td>
+<td>[]是字符集合，表示匹配方括号中所包含的任意一个字符, -表示字符范围。匹配指定范围内的任意一个字符. 这里表示匹配a到z或0到9(即所有的小写字母或数字)中的任意一个字符</td>
+</tr>
+<tr>
+<td>[^a-z0-9]</td>
+<td>[]中的^(脱字符)表示非,这里表示匹配除了a-z和0-9(即除了所有的小写字母或数字)以外的任意一个字符</td>
+</tr>
+<tr>
+<td>[\u4e00-\u9fa5]</td>
+<td>匹配汉字</td>
+</tr>
+<tr>
+<td>\d</td>
+<td>匹配数字,效果同[0-9]</td>
+</tr>
+<tr>
+<td>\D</td>
+<td>匹配非数字,效果同[^0-9]</td>
+</tr>
+<tr>
+<td>\w</td>
+<td>匹配数字,字母,下划线,效果同[0-9a-zA-Z_]</td>
+</tr>
+<tr>
+<td>\W</td>
+<td>匹配非数字,字母,下划线,效果同[^0-9a-zA-Z_]</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>匹配任何空白字符，包括空格、换页符、换行符、回车符、制表符等等。等价于[ \f\n\r\t]。</td>
+</tr>
+<tr>
+<td>\S</td>
+<td>匹配非空字符,等价于[^ \f\n\r\t]</td>
+</tr>
+</tbody>
+</table>
+<h6 id="3-锚字符"><a href="#3-锚字符" class="headerlink" title="3.锚字符"></a>3.锚字符</h6><table>
+<thead>
+<tr>
+<th>元字符</th>
+<th>匹配内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>^</td>
+<td>行首匹配,和在[]字符集和中的 ^ 不是一个意思。</td>
+</tr>
+<tr>
+<td>$</td>
+<td>行尾匹配</td>
+</tr>
+</tbody>
+</table>
+<h6 id="4-多个字符"><a href="#4-多个字符" class="headerlink" title="4.多个字符"></a>4.多个字符</h6><table>
+<thead>
+<tr>
+<th>元字符</th>
+<th>匹配内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(xyz)</td>
+<td>整组匹配，这里代表匹配xyz这组符串。</td>
+</tr>
+<tr>
+<td>x?</td>
+<td>匹配0个或1个x</td>
+</tr>
+<tr>
+<td>x*</td>
+<td>匹配0个或任意多个x</td>
+</tr>
+<tr>
+<td>x+</td>
+<td>匹配至少一个x</td>
+</tr>
+<tr>
+<td>x{n}</td>
+<td>匹配确定的n个x(n是一个非负整数)</td>
+</tr>
+<tr>
+<td>x{n,}</td>
+<td>匹配至少n个x(n是一个非负整数)</td>
+</tr>
+<tr>
+<td>x{n,m}</td>
+<td>匹配至少n个,最多m个x(n是一个非负整数)</td>
+</tr>
+<tr>
+<td>x\</td>
+<td>y</td>
+<td>\</td>
+<td>表示或,这里代表匹配x或y</td>
+</tr>
+</tbody>
+</table>
+<p><strong>贪婪模式下尽可能多的匹配，元字符后面跟?表示非贪婪模式，非贪婪模式下尽可能少的重复</strong>  </p>
+<ul>
+<li>x<em>? 匹配x任意次，但尽可能少匹配—例如/x.</em>i/.exec(‘xiaoyangzi123’),匹配’xi’,而/x.*i/.exec(‘xiaoyangzi123’),匹配’xiaoyangzi’ </li>
+<li><p>x+? 匹配1次或更多次，但尽可能少匹配—例如/x.+?a/.exec(‘xiaoyangzi123’)匹配’xia’,而/x.+a/.exec(‘xiaoyangzi123’)匹配’xiaoya’，但/x.+?i/.exec(‘xiaoyangzi123’)依然匹配’xiaoyangzi’，因为至少需要匹配1次</p>
+</li>
+<li><p>x?? 匹配x0次或1次，但尽可能少匹配(以下不再举例)</p>
+</li>
+<li>x{n,m}? 匹配x n到m次，但尽可能少匹配</li>
+<li>x{n,}? 匹配x n次以上，但尽可能少匹配</li>
+</ul>
+<h6 id="5-整组匹配进阶"><a href="#5-整组匹配进阶" class="headerlink" title="5.整组匹配进阶"></a>5.整组匹配进阶</h6><table>
+<thead>
+<tr>
+<th>元字符</th>
+<th>匹配内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(xyz)</td>
+<td>匹配xyz,并捕获文本到自动命名($1,$2…)的组里</td>
+</tr>
+<tr>
+<td>(?:xyz)</td>
+<td>匹配xyz,不捕获匹配的文本，也不给此分组分配组号(即$1,$2..取不到该组)</td>
+</tr>
+<tr>
+<td>a(?=xyz)</td>
+<td>匹配xyz前面的位置的a—例如/(\S(?=\d{3}))/.exec(‘xiaoyangzi123’)，匹配到’i’，RegExp.$1为’i’</td>
+</tr>
+<tr>
+<td>a(?!xyz)</td>
+<td>匹配后面跟的不是xyz的a—例如/\d+(?!.)/.exec(‘3.141’)匹配”141”而不是”3.141”</td>
+</tr>
+</tbody>
+</table>
+<h3 id="5、正则表达式应用demo"><a href="#5、正则表达式应用demo" class="headerlink" title="5、正则表达式应用demo"></a>5、正则表达式应用demo</h3><p>注册页面信息验证<br>: <em> 账号长度在6-16之间，只能由数字、字母、下划线组成；首字母不能是数字<br>: </em> 密码长度必须在6-12之间；不允许出现空白字符<br>: <em> 邮箱首字符不能是数字, 用户名由字母数字下划线组成的163或qq或126邮箱<br>: </em> 邮编必须是6位数字<br>: * 电话必须是1开头的11位数字<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!doctype html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>注册页面验证<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="javascript"></span></div><div class="line">            <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                $(<span class="string">"user"</span>).onfocus = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                    $(<span class="string">"u"</span>).innerHTML = <span class="string">"长度在6-16之间,只能由数字/字母/下划线组成;首字母不能是数字"</span>;</div><div class="line">    			&#125;</div><div class="line">                $(<span class="string">"user"</span>).onblur = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                    <span class="keyword">var</span> parrent1 = <span class="regexp">/^[a-z_]\w&#123;5,15&#125;$/i</span>;</div><div class="line">                    <span class="keyword">if</span>( parrent1.test($(<span class="string">"user"</span>).value) )&#123;</div><div class="line">                        $(<span class="string">"u"</span>).innerHTML = <span class="string">"输入正确!"</span></div><div class="line">                    &#125;<span class="keyword">else</span>&#123;</div><div class="line">                        $(<span class="string">"u"</span>).innerHTML = <span class="string">"输入错误!"</span></div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">                $(<span class="string">"pwd"</span>).onfocus = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                    $(<span class="string">"p"</span>).innerHTML = <span class="string">"长度必须在6-12之间,不允许出现空白字符"</span>;</div><div class="line">                &#125;</div><div class="line">                $(<span class="string">"pwd"</span>).onblur = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                    <span class="keyword">var</span> parrent2 = <span class="regexp">/^\S&#123;6,12&#125;$/</span>;</div><div class="line">                    <span class="keyword">if</span>( parrent2.test($(<span class="string">"pwd"</span>).value) )&#123;</div><div class="line">                        $(<span class="string">"p"</span>).innerHTML = <span class="string">"输入正确！"</span></div><div class="line">                    &#125;<span class="keyword">else</span>&#123;</div><div class="line">                        $(<span class="string">"p"</span>).innerHTML = <span class="string">"输入错误！"</span></div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">                $(<span class="string">"email"</span>).onfocus = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                    $(<span class="string">"e"</span>).innerHTML = <span class="string">"首字符不能是数字, 用户名由字母数字下划线组成的163或qq或126邮箱"</span>;</div><div class="line">                &#125;</div><div class="line">                $(<span class="string">"email"</span>).onblur = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                    <span class="keyword">var</span> parrent3 = <span class="regexp">/^[a-z_]\w*(@163\.com|@qq\.com|@126\.com)$/i</span>;</div><div class="line">                    <span class="keyword">if</span>( parrent3.test($(<span class="string">"email"</span>).value) )&#123;</div><div class="line">                        $(<span class="string">"e"</span>).innerHTML = <span class="string">"输入正确！"</span>;</div><div class="line">                    &#125;<span class="keyword">else</span>&#123;</div><div class="line">                        $(<span class="string">"e"</span>).innerHTML = <span class="string">"输入错误！"</span>;</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">                $(<span class="string">"you"</span>).onfocus = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                    $(<span class="string">"y"</span>).innerHTML = <span class="string">"必须是6位数字"</span>;</div><div class="line">                &#125;</div><div class="line">                $(<span class="string">"you"</span>).onblur = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                    <span class="keyword">var</span> parrent4 = <span class="regexp">/^\d&#123;6&#125;$/</span>;</div><div class="line">                    <span class="keyword">if</span>( parrent4.test($(<span class="string">"you"</span>).value) )&#123;</div><div class="line">                        $(<span class="string">"y"</span>).innerHTML = <span class="string">"输入正确！"</span></div><div class="line">                    &#125;<span class="keyword">else</span>&#123;</div><div class="line">                        $(<span class="string">"y"</span>).innerHTML = <span class="string">"输入错误！"</span></div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">                $(<span class="string">"tel"</span>).onfocus = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                    $(<span class="string">"t"</span>).innerHTML = <span class="string">"必须是11位数字，开头必须是1"</span>;</div><div class="line">                &#125;</div><div class="line">                $(<span class="string">"tel"</span>).onblur = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                    <span class="keyword">var</span> parrent5 = <span class="regexp">/^1\d&#123;10&#125;$/</span>;</div><div class="line">                    <span class="keyword">if</span>( parrent5.test($(<span class="string">"tel"</span>).value) )&#123;</div><div class="line">                        $(<span class="string">"t"</span>).innerHTML = <span class="string">"输入正确！"</span>;</div><div class="line">                    &#125;<span class="keyword">else</span>&#123;</div><div class="line">                        $(<span class="string">"t"</span>).innerHTML = <span class="string">"输入错误！"</span>;</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            </div><div class="line">            <span class="function"><span class="keyword">function</span> <span class="title">$</span> (<span class="params">idName</span>) </span>&#123;</div><div class="line">                <span class="keyword">return</span> <span class="built_in">document</span>.getElementById(idName);</div><div class="line">            &#125;</div><div class="line">        <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">    	账号<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"user"</span> <span class="attr">placeholder</span>=<span class="string">"请输入用户名"</span>/&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"u"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    	密码<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">id</span>=<span class="string">"pwd"</span> <span class="attr">placeholder</span>=<span class="string">"请输入密码"</span>/&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"p"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    	邮箱<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"email"</span> <span class="attr">placeholder</span>=<span class="string">"请输入邮箱"</span>/&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"e"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    	邮编<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"you"</span> <span class="attr">placeholder</span>=<span class="string">"请输邮编"</span>/&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"y"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    	电话<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"tel"</span> <span class="attr">placeholder</span>=<span class="string">"请输入电话号码"</span>/&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"t"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></p>
 
             
         </div>
