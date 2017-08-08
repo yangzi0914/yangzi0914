@@ -6,22 +6,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Eddie_yang‘s Notes">
-    <title>归档: 2017/6 - Eddie_yang‘s Notes</title>
+    <title>正则表达式 - Eddie_yang‘s Notes</title>
     <meta name="author" content="Eddie_yang">
     
     
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <meta name="description" content="小洋子的前端学习笔记">
+    <meta name="description" content="1、简介   正则表达式：要检索某个文本的时候，可以使用一种模式对这个文本的内容进行解析，这个模式可以是一个单独的字符，也可以是一系列复杂的字符，可以实现对文本内容的解析、校验、替换等功能。RegExp是正则表达式的缩写。  2、创建正则表达式对象1.构造函数法1var parrent = new RegExp(&quot;box&quot;, &quot;gi&quot;); 2.字面量法1var parrent = /box/gi;">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="Eddie_yang‘s Notes">
-<meta property="og:url" content="http://yangzi0914.github.io/archives/2017/06/index.html">
+<meta property="og:title" content="正则表达式">
+<meta property="og:url" content="http://yangzi0914.github.io/2017/08/08/hello-world/index.html">
 <meta property="og:site_name" content="Eddie_yang‘s Notes">
-<meta property="og:description" content="小洋子的前端学习笔记">
+<meta property="og:description" content="1、简介   正则表达式：要检索某个文本的时候，可以使用一种模式对这个文本的内容进行解析，这个模式可以是一个单独的字符，也可以是一系列复杂的字符，可以实现对文本内容的解析、校验、替换等功能。RegExp是正则表达式的缩写。  2、创建正则表达式对象1.构造函数法1var parrent = new RegExp(&quot;box&quot;, &quot;gi&quot;); 2.字面量法1var parrent = /box/gi;">
+<meta property="og:updated_time" content="2017-08-08T13:27:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Eddie_yang‘s Notes">
-<meta name="twitter:description" content="小洋子的前端学习笔记">
+<meta name="twitter:title" content="正则表达式">
+<meta name="twitter:description" content="1、简介   正则表达式：要检索某个文本的时候，可以使用一种模式对这个文本的内容进行解析，这个模式可以是一个单独的字符，也可以是一系列复杂的字符，可以实现对文本内容的解析、校验、替换等功能。RegExp是正则表达式的缩写。  2、创建正则表达式对象1.构造函数法1var parrent = new RegExp(&quot;box&quot;, &quot;gi&quot;); 2.字面量法1var parrent = /box/gi;">
     
     
         
@@ -44,7 +45,7 @@
 
     
 
-<header id="header" data-behavior="2">
+<header id="header" data-behavior="4">
     <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
     <h1 class="header-title">
         <a class="header-title-link" href="/ ">Eddie_yang‘s Notes</a>
@@ -62,7 +63,7 @@
             <!-- Define author's picture -->
 
 
-<nav id="sidebar" data-behavior="2">
+<nav id="sidebar" data-behavior="4">
     
     
         <ul class="sidebar-buttons">
@@ -182,43 +183,38 @@
 </nav>
 
             
-            <div id="main" data-behavior="2"
+            <div id="main" data-behavior="4"
                  class="
                         hasCoverMetaIn
                         ">
                 
-    
-
-<section class="postShorten-group main-content-wrap">
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
     
     
-    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2017/06/14/hello-world/">
-                            正则表达式
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2017-06-14T18:22:36+08:00">
+        <div class="post-header main-content-wrap text-left">
+    
+        <h1 class="post-title" itemprop="headline">
+            正则表达式
+        </h1>
+    
+    <div class="post-meta">
+    <time itemprop="datePublished" datetime="2017-08-08T21:27:31+08:00">
 	
-		    6月 14, 2017
+		    8月 08, 2017
     	
     </time>
     
 </div>
 
-            </div>
-            
-                <div class="postShorten-content" itemprop="articleBody">
-                    <h3 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h3><blockquote>
+</div>
+    
+    <div class="post-content markdown" itemprop="articleBody">
+        <div class="main-content-wrap">
+            <h3 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h3><blockquote>
 <p>  正则表达式：要检索某个文本的时候，可以使用一种模式对这个文本的内容进行解析，这个模式可以是一个单独的字符，也可以是一系列复杂的字符，可以实现对文本内容的解析、校验、替换等功能。RegExp是正则表达式的缩写。</p>
 </blockquote>
-<h3 id="2、创建正则表达式对象"><a href="#2、创建正则表达式对象" class="headerlink" title="2、创建正则表达式对象"></a>2、创建正则表达式对象</h3><p>1.构造函数法<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> parrent = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"box"</span>, <span class="string">"gi"</span>);</div><div class="line"><span class="string">``</span><span class="string">``</span>  </div><div class="line"><span class="number">2.</span>字面量法  </div><div class="line"><span class="string">``</span><span class="string">``</span>javascript</div><div class="line"><span class="keyword">var</span> parrent = <span class="regexp">/box/gi</span>;  <span class="comment">//该变量下文将继续使用</span></div></pre></td></tr></table></figure></p>
+<h3 id="2、创建正则表达式对象"><a href="#2、创建正则表达式对象" class="headerlink" title="2、创建正则表达式对象"></a>2、创建正则表达式对象</h3><p>1.构造函数法<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> parrent = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"box"</span>, <span class="string">"gi"</span>);</div></pre></td></tr></table></figure></p>
+<p>2.字面量法<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> parrent = <span class="regexp">/box/gi</span>;  <span class="comment">//该变量下文将继续使用</span></div></pre></td></tr></table></figure></p>
 <h3 id="3、正则表达式的方法"><a href="#3、正则表达式的方法" class="headerlink" title="3、正则表达式的方法"></a>3、正则表达式的方法</h3><h6 id="1、test"><a href="#1、test" class="headerlink" title="1、test()"></a>1、test()</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">"this is a Box box box"</span>;  <span class="comment">//该变量下文将继续使用</span></div><div class="line">parrent.test(str);</div></pre></td></tr></table></figure>
 <p><strong>功能</strong>：查找参数字符串中是否存在正则表达式所写的模式规则<br><strong>参数</strong>：要检索的字符串。<br><strong>返回值</strong>：布尔值，true表示找到符合该模式的字符串，false表示未找到。<br><strong>注意</strong>：<em>这个方法只要找到匹配模式中的规则，就立即返回true，就不会再往下找了，所以这个方法 全局模式匹配’g’ 无效</em></p>
 <h6 id="2、exec"><a href="#2、exec" class="headerlink" title="2、exec()"></a>2、exec()</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">parrent.exec(str);</div></pre></td></tr></table></figure>
@@ -386,31 +382,70 @@
 </table>
 <h3 id="5、正则表达式应用demo"><a href="#5、正则表达式应用demo" class="headerlink" title="5、正则表达式应用demo"></a>5、正则表达式应用demo</h3><p>注册页面信息验证<br>: <em> 账号长度在6-16之间，只能由数字、字母、下划线组成；首字母不能是数字<br>: </em> 密码长度必须在6-12之间；不允许出现空白字符<br>: <em> 邮箱首字符不能是数字, 用户名由字母数字下划线组成的163或qq或126邮箱<br>: </em> 邮编必须是6位数字<br>: * 电话必须是1开头的11位数字<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!doctype html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>注册页面验证<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="javascript"></span></div><div class="line">            <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                $(<span class="string">"user"</span>).onfocus = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                    $(<span class="string">"u"</span>).innerHTML = <span class="string">"长度在6-16之间,只能由数字/字母/下划线组成;首字母不能是数字"</span>;</div><div class="line">    			&#125;</div><div class="line">                $(<span class="string">"user"</span>).onblur = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                    <span class="keyword">var</span> parrent1 = <span class="regexp">/^[a-z_]\w&#123;5,15&#125;$/i</span>;</div><div class="line">                    <span class="keyword">if</span>( parrent1.test($(<span class="string">"user"</span>).value) )&#123;</div><div class="line">                        $(<span class="string">"u"</span>).innerHTML = <span class="string">"输入正确!"</span></div><div class="line">                    &#125;<span class="keyword">else</span>&#123;</div><div class="line">                        $(<span class="string">"u"</span>).innerHTML = <span class="string">"输入错误!"</span></div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">                $(<span class="string">"pwd"</span>).onfocus = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                    $(<span class="string">"p"</span>).innerHTML = <span class="string">"长度必须在6-12之间,不允许出现空白字符"</span>;</div><div class="line">                &#125;</div><div class="line">                $(<span class="string">"pwd"</span>).onblur = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                    <span class="keyword">var</span> parrent2 = <span class="regexp">/^\S&#123;6,12&#125;$/</span>;</div><div class="line">                    <span class="keyword">if</span>( parrent2.test($(<span class="string">"pwd"</span>).value) )&#123;</div><div class="line">                        $(<span class="string">"p"</span>).innerHTML = <span class="string">"输入正确！"</span></div><div class="line">                    &#125;<span class="keyword">else</span>&#123;</div><div class="line">                        $(<span class="string">"p"</span>).innerHTML = <span class="string">"输入错误！"</span></div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">                $(<span class="string">"email"</span>).onfocus = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                    $(<span class="string">"e"</span>).innerHTML = <span class="string">"首字符不能是数字, 用户名由字母数字下划线组成的163或qq或126邮箱"</span>;</div><div class="line">                &#125;</div><div class="line">                $(<span class="string">"email"</span>).onblur = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                    <span class="keyword">var</span> parrent3 = <span class="regexp">/^[a-z_]\w*(@163\.com|@qq\.com|@126\.com)$/i</span>;</div><div class="line">                    <span class="keyword">if</span>( parrent3.test($(<span class="string">"email"</span>).value) )&#123;</div><div class="line">                        $(<span class="string">"e"</span>).innerHTML = <span class="string">"输入正确！"</span>;</div><div class="line">                    &#125;<span class="keyword">else</span>&#123;</div><div class="line">                        $(<span class="string">"e"</span>).innerHTML = <span class="string">"输入错误！"</span>;</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">                $(<span class="string">"you"</span>).onfocus = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                    $(<span class="string">"y"</span>).innerHTML = <span class="string">"必须是6位数字"</span>;</div><div class="line">                &#125;</div><div class="line">                $(<span class="string">"you"</span>).onblur = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                    <span class="keyword">var</span> parrent4 = <span class="regexp">/^\d&#123;6&#125;$/</span>;</div><div class="line">                    <span class="keyword">if</span>( parrent4.test($(<span class="string">"you"</span>).value) )&#123;</div><div class="line">                        $(<span class="string">"y"</span>).innerHTML = <span class="string">"输入正确！"</span></div><div class="line">                    &#125;<span class="keyword">else</span>&#123;</div><div class="line">                        $(<span class="string">"y"</span>).innerHTML = <span class="string">"输入错误！"</span></div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">                $(<span class="string">"tel"</span>).onfocus = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                    $(<span class="string">"t"</span>).innerHTML = <span class="string">"必须是11位数字，开头必须是1"</span>;</div><div class="line">                &#125;</div><div class="line">                $(<span class="string">"tel"</span>).onblur = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                    <span class="keyword">var</span> parrent5 = <span class="regexp">/^1\d&#123;10&#125;$/</span>;</div><div class="line">                    <span class="keyword">if</span>( parrent5.test($(<span class="string">"tel"</span>).value) )&#123;</div><div class="line">                        $(<span class="string">"t"</span>).innerHTML = <span class="string">"输入正确！"</span>;</div><div class="line">                    &#125;<span class="keyword">else</span>&#123;</div><div class="line">                        $(<span class="string">"t"</span>).innerHTML = <span class="string">"输入错误！"</span>;</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            </div><div class="line">            <span class="function"><span class="keyword">function</span> <span class="title">$</span> (<span class="params">idName</span>) </span>&#123;</div><div class="line">                <span class="keyword">return</span> <span class="built_in">document</span>.getElementById(idName);</div><div class="line">            &#125;</div><div class="line">        <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">    	账号<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"user"</span> <span class="attr">placeholder</span>=<span class="string">"请输入用户名"</span>/&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"u"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    	密码<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">id</span>=<span class="string">"pwd"</span> <span class="attr">placeholder</span>=<span class="string">"请输入密码"</span>/&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"p"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    	邮箱<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"email"</span> <span class="attr">placeholder</span>=<span class="string">"请输入邮箱"</span>/&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"e"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    	邮编<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"you"</span> <span class="attr">placeholder</span>=<span class="string">"请输邮编"</span>/&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"y"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    	电话<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"tel"</span> <span class="attr">placeholder</span>=<span class="string">"请输入电话号码"</span>/&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"t"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></p>
 
-                    
-                        
-                    
-                    
-                        <p>
-                            <a href="/2017/06/14/hello-world/#post-footer" class="postShorten-excerpt_link link">
-                                注释和共享
-                            </a>
-                        </p>
-                    
-                </div>
             
         </div>
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
         
-    </article>
-    
-    <div class="pagination-bar">
-    <ul class="pagination">
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yangzi0914.github.io/2017/08/08/hello-world/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yangzi0914.github.io/2017/08/08/hello-world/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yangzi0914.github.io/2017/08/08/hello-world/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
         
-        
-        <li class="pagination-number">第 1 页 共 1 页</li>
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
     </ul>
 </div>
 
-</section>
+
+        
+            
+        
+    </div>
+</article>
 
 
 
@@ -421,6 +456,83 @@
 </footer>
 
             </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yangzi0914.github.io/2017/08/08/hello-world/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yangzi0914.github.io/2017/08/08/hello-world/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yangzi0914.github.io/2017/08/08/hello-world/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </div>
+                <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+    <ul class="share-options">
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://yangzi0914.github.io/2017/08/08/hello-world/">
+                <i class="fa fa-google-plus"></i><span class="">分享到 Google+</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yangzi0914.github.io/2017/08/08/hello-world/">
+                <i class="fa fa-facebook-official"></i><span>分享到 Facebook</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://yangzi0914.github.io/2017/08/08/hello-world/">
+                <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
             
         </div>
         
@@ -455,6 +567,8 @@
     <!--SCRIPTS-->
 <script src="/assets/js/script-i4qo6jx6jji9fg0dftpya6ivemizsbow4fhow76d8dwpm7m1wbvi378ssumx.min.js"></script>
 <!--SCRIPTS END-->
+
+    
 
 
 
