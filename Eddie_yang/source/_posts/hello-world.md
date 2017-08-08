@@ -8,7 +8,7 @@ title: 正则表达式
 1.构造函数法  
 ````javascript
 var parrent = new RegExp("box", "gi");
-````  
+````
 2.字面量法  
 ````javascript
 var parrent = /box/gi;  //该变量下文将继续使用
