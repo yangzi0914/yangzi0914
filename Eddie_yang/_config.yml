@@ -34,7 +34,7 @@ titlecase: false                        #把标题转换为 title case
 external_link: true                     #在新链接中打开
 filename_case: 0                        #把文件名称转换为(1)小写或(2)大写
 render_drafts: false                    #显示草稿
-post_asset_folder: false                #启动 Asset 资源文件夹
+post_asset_folder: true                 #启动 Asset 资源文件夹
 relative_link: false                    #把链接改为与根目录的相对位址
 future: true                            #显示未来的文章
 highlight: 
@@ -72,3 +72,9 @@ deploy:
   repo: https://github.com/yangzi0914/yangzi0914.github.io.git
   branch: master
   message: blog
+
+#启用RSS提要,好像是用来设置摘要,默认前140字
+feed: 
+    type: atom                        #类型
+    path: atom.xml                    #路径
+    limit: 20                         #Feed中的最大帖子数（使用0或false显示所有帖子）
