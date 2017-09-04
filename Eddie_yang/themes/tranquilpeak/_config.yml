@@ -112,13 +112,13 @@ header:
 # Author
 # Your biography and your job is editable in each languages files in `languages` folder
 author:
-    email:
+    email: yangzi0914@sina.cn
     location:
     # Your profile picture located in folder `source/_images/` (development)
     # or in `source/assets/images/` (production)
     # or you can use an external url
     # Overwritten by your gravatar image if `gravatar_email` is filled
-    picture:
+    picture: my.jpeg
     # Your Twitter username without the @. E.g : `tranquilpeak`
     twitter:
     # Your google plus profile id. E.g : `+Tranquilpeak` or `123812884128439`
