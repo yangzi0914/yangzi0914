@@ -131,7 +131,7 @@ x+ | 匹配至少一个x
 x{n} | 匹配确定的n个x(n是一个非负整数)
 x{n,} | 匹配至少n个x(n是一个非负整数)
 x{n,m} | 匹配至少n个,最多m个x(n是一个非负整数)
-x\|y | \| 表示或,这里代表匹配x或y
+x&brvbar;y | &brvbar; 表示或,这里代表匹配x或y
 **贪婪模式下尽可能多的匹配，元字符后面跟?表示非贪婪模式，非贪婪模式下尽可能少的重复**  
 * x*? 匹配x任意次，但尽可能少匹配---例如/x.*i/.exec('xiaoyangzi123'),匹配'xi',而/x.*i/.exec('xiaoyangzi123'),匹配'xiaoyangzi' 
 * x+? 匹配1次或更多次，但尽可能少匹配---例如/x.+?a/.exec('xiaoyangzi123')匹配'xia',而/x.+a/.exec('xiaoyangzi123')匹配'xiaoya'，但/x.+?i/.exec('xiaoyangzi123')依然匹配'xiaoyangzi'，因为至少需要匹配1次
